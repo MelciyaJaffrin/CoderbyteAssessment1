@@ -6,7 +6,7 @@ import java.util.Scanner;
 
 public class FXTradingMain {
 	private static List<TradeInfo> trades = new ArrayList<>();
-    private static double usdToInrRate = 82.55; // Initial hard coded rate for USD to INR
+    private static double usdToInrRate = 66.00; // Initial hard coded rate for USD to INR
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
@@ -67,7 +67,6 @@ public class FXTradingMain {
         double rate = usdToInrRate; // Default rate
         double inrAmount = amount * rate; //inr amount
         if (rateChoice.equalsIgnoreCase("Yes")) {
-            rate = usdToInrRate;
             System.out.printf("You are transferring INR %.2f to %s. %n", inrAmount, customerName);
         }
 
